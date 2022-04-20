@@ -2,6 +2,7 @@
 
 const fetch = require('node-fetch')
 const { program } = require('commander')
+const chalk = require('chalk')
 
 program
     .description('Get stats for any npm package on terminal')
@@ -10,7 +11,7 @@ program
         '-fr, --from <fromDate>',
         'From data of package in YYYY-MM-DD format'
     )
-    .option('-to, --to <toDate>', 'To date of package YYYY-MM-DD format')
+    .option('-to, --to <toDate>', 'To date of package in YYYY-MM-DD format')
     .parse()
 
 const options = program.opts()
@@ -51,4 +52,9 @@ if (from && to) {
     }
 }
 
-Promise.resolve(response).then((d) => console.log(d))
+Promise.resolve(response).then((d) => {
+    console.log(`Package name : ${chalk.cyan(d['package'])}`)
+    console.log(`Downloads : ${chalk.blue(d['downloads'])}`)
+    console.log(`Start date : ${chalk.green(d['start'])}`)
+    console.log(`End date : ${chalk.red(d['end'])}`)
+})
