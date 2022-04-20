@@ -38,19 +38,16 @@ if (from && to) {
         .then((body) => body)
 } else {
     if (!from && to) {
-        console.log(1)
         const url = `https://api.npmjs.org/downloads/point/1980-01-01:${to}/${packageName}`
         response = fetch(url)
             .then((res) => res.json())
             .then((body) => body)
     } else if (!to && from) {
-        console.log(2)
         const url = `https://api.npmjs.org/downloads/point/${from}:${today}/${packageName}`
         response = fetch(url)
             .then((res) => res.json())
             .then((body) => body)
     } else {
-        console.log(4);
         const url = `https://api.npmjs.org/downloads/point/1980-01-01:${today}/${packageName}`
         response = fetch(url)
             .then((res) => res.json())
