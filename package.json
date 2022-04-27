@@ -1,6 +1,6 @@
 {
   "name": "stats-for",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Check stats for any npm package",
   "main": "index.js",
   "bin":"index.js",
