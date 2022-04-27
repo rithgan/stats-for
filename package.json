@@ -3,10 +3,20 @@
   "version": "1.0.0",
   "description": "Check stats for any npm package",
   "main": "index.js",
+  "bin":"index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "author": "rithgan <rithikgandhi1989@gmail.com>",
+  "keywords":[
+    "stats-for",
+    "stats",
+    "stats for",
+    "npm",
+    "data-for",
+    "data",
+    "npx stats-for"
+  ],
+  "author": "rithgan <rithos2000@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.13.0",
@@ -17,5 +27,12 @@
     "chalk": "4.1.2",
     "commander": "^9.2.0",
     "node-fetch": "2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rithgan/stats-for"
+  },
+  "bugs": {
+    "url": "https://github.com/rithgan/stats-for/issues"
   }
 }

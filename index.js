@@ -28,8 +28,6 @@ today = yyyy + '-' + mm + '-' + dd
 
 let response = ''
 
-console.log(from,to, today)
-
 if (from && to) {
     console.log(0)
     const url = `https://api.npmjs.org/downloads/point/${from}:${to}/${packageName}`
