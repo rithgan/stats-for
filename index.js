@@ -29,7 +29,6 @@ today = yyyy + '-' + mm + '-' + dd
 let response = ''
 
 if (from && to) {
-    console.log(0)
     const url = `https://api.npmjs.org/downloads/point/${from}:${to}/${packageName}`
     response = fetch(url)
         .then((res) => res.json())
