@@ -17,7 +17,7 @@
     "npx stats-for"
   ],
   "author": "rithgan <rithos2000@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "eslint": "^8.13.0",
     "eslint-config-prettier": "^8.5.0",
